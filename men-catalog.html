@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+    <title>JForce</title>
+
+    <!-- Bootstrap core CSS -->
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+  <style type="text/css" id="holderjs-style"></style>
+  <style type="text/css">
+  .dropdown-menu {
+    min-width: 200px;
+  }
+  .dropdown-menu.columns-2 {
+    min-width: 400px;
+  }
+  .dropdown-menu.columns-3 {
+    min-width: 700px;
+  }
+  .dropdown-menu li a {
+    padding: 4px 13px;
+    font-weight: 300;
+  }
+  .multi-column-dropdown {
+    list-style: none;
+  }
+  .multi-column-dropdown li a {
+    display: block;
+    clear: both;
+    line-height: 1.428571429;
+    color: #333;
+    white-space: normal;
+  }
+  .multi-column-dropdown li a:hover {
+    text-decoration: none;
+    color: #262626;
+    background-color: #f5f5f5;
+  }
+  
+  @media (max-width: 767px) {
+    .dropdown-menu.multi-column {
+      min-width: 240px !important;
+      overflow-x: hidden;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content {
+      width: 90%;
+      margin: 50px auto;
+      padding: 10px;
+    }
+  }
+</style>
+</head>
+<!-- NAVBAR =========================================== -->
+<body>
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" ><img alt="Brand" src="J.png"></a>
+      </div>
+      <div class="navbar-collapse collapse">
+
+       <ul class="nav navbar-nav navbar-center">
+            <form class="navbar-form" role="search">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" name="q">
+                  <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                  </div>
+              </div>
+            </form>
+          </ul>
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Catalog <b class="caret"></b></a>
+            <ul class="dropdown-menu multi-column columns-3">
+              <div class="row">
+                <div class="col-sm-4">
+                  <ul class="multi-column-dropdown">
+                    <li><a href="#">NEW</a></li>
+                    <li><a href="#">SPECIAL PRICES</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-4">
+                  <ul class="multi-column-dropdown">
+                    <li class="dropdown-header">CLOTHING</li>
+                    <li class="divider"></li>
+                    <li><a href="#">Dresses</a></li>
+                    <li><a href="#">Coats</a></li>
+                    <li><a href="#">Jackets</a></li>
+                    <li><a href="#">Cardigans and sweaters</a></li>
+                    <li><a href="#">Blouses and shirts</a></li>
+                    <li><a href="#">T-shirts and tops</a></li>
+                    <li><a href="#">Trousers</a></li>
+                    <li><a href="#">Jeans</a></li>
+                    <li><a href="#">Skirts</a></li>
+                    <li><a href="#">Shorts</a></li>
+                    <li><a href="#">Jumpsuits</a></li>
+                    <li><a href="#">Intimates</a></li>
+                    <li><a href="#">Sport</a></li>
+                  </ul>
+                </div>
+                  <div class="col-sm-4">
+                    <ul class="multi-column-dropdown">
+                      <li class="dropdown-header">ACCESSORIES</li>
+                      <li class="divider"></li>
+                      <li><a href="#">Shoes</a></li>
+                      <li><a href="#">Bags</a></li>
+                      <li><a href="#">Jewellery</a></li>
+                      <li><a href="#">Leather goods</a></li>
+                      <li><a href="#">Belts</a></li>
+                      <li><a href="#">Hats and caps</a></li>
+                      <li><a href="#">Foulards and scarves</a></li>
+                      <li><a href="#">Gloves</a></li>
+                      <li><a href="#">Sunglasses</a></li>
+                      <li><a href="#">Other accessories</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="cart"><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> SHOP NOW</a></li>
+            <li><a href="signUp.html">Sign Up</a></li>
+            <li><a href="login.html">Sign In</a></li>  
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i></a>
+              <ul class="dropdown-menu">
+                  <li><a href="">Profile</a></li>
+                  <li><a href="">Account Settings</a></li>
+                  <li><a href="">Log Out</a></li>
+              </ul>
+            </li>  
+          </ul>
+      </div>
+    </div>
+  </div>
+
+    
+<!-- Page Content ================================================== -->
+    <div class="container">
+      <div class="col-md-12">
+        <div class="col-md-6 text-right">
+          <h4><a href="women-catalog.html">WOMEN</a></h4>
+        </div>
+        <div class="col-md-6">
+            <h3><U><a href="men-catalog.html">MAN</a></U></h3>
+        </div>
+      </div>
+<!-- ROW 0 -->
+        <div class="row">
+
+                <div class="row carousel-holder">
+
+                    <div class="col-md-12">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <!-- 1170 x 500 -->
+                                <div class="item active">
+                                    <img class="slide-image" src="http://i1371.photobucket.com/albums/ag320/peterpanhihi/1_zpsbe861110.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="http://i1371.photobucket.com/albums/ag320/peterpanhihi/2_zpsd038e7bd.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="http://i1371.photobucket.com/albums/ag320/peterpanhihi/3_zps7923aafb.jpg" alt="">
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+<!-- ROW 1 -->
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://i1371.photobucket.com/albums/ag320/peterpanhihi/1_zpsfcda112b.jpg" alt="" width="360" height="500">
+                            <div class="caption text-center">
+                                <h5>FUNNEL COAT</h5>
+                                <h6>THB 9,490</h6>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">15 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://i1371.photobucket.com/albums/ag320/peterpanhihi/2_zps5ef98cee.jpg" alt="" width="360" height="500">
+                            <div class="caption text-center">
+                                <h5>COAT</h5>
+                                <h6>THB 9,490</h6>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">12 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://i1371.photobucket.com/albums/ag320/peterpanhihi/4_zps38e8ecc5.jpg" alt="" width="360" height="500">
+                            <div class="caption text-center">
+                              <h5>DUFFLE COAT WITH DETACHABLE HOOD</h5>
+                              <h6>THB 9,490</h6>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">31 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- ROW 1 -->
+                <div class="row">
+                  <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://i1371.photobucket.com/albums/ag320/peterpanhihi/6_zps5b642e3b.jpg" alt="" width="360" height="500">
+                            <div class="caption text-center">
+                              <h5>BLUE COAT WITH FUR COLLAR</h5>
+                              <h6>THB 9,490</h6>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">57 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://i1371.photobucket.com/albums/ag320/peterpanhihi/5_zpsb9f93fb4.jpg" alt="" width="360" height="500">
+                            <div class="caption text-center">
+                              <h5>STRAIGHT TRENCHCOAT</h5>
+                              <h6>THB 7,490</h6>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">4 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://i1371.photobucket.com/albums/ag320/peterpanhihi/3_zps9f42ffd8.jpg" alt="" width="360" height="500">
+                            <div class="caption text-center">
+                              <h5>ZIPPED SHORT COAT</h5>
+                              <h6>THB 8,990</h6>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">31 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/docs.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  
+
+<div data-original-title="Copy to clipboard" title="" style="position: absolute; left: 0px; top: -9999px; width: 15px; height: 15px; z-index: 999999999;" class="global-zeroclipboard-container" id="global-zeroclipboard-html-bridge">      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="global-zeroclipboard-flash-bridge" height="100%" width="100%">         <param name="movie" value="/assets/flash/ZeroClipboard.swf?noCache=1414085574138">         <param name="allowScriptAccess" value="sameDomain">         <param name="scale" value="exactfit">         <param name="loop" value="false">         <param name="menu" value="false">         <param name="quality" value="best">         <param name="bgcolor" value="#ffffff">         <param name="wmode" value="transparent">         <param name="flashvars" value="trustedOrigins=getbootstrap.com%2C%2F%2Fgetbootstrap.com%2Chttp%3A%2F%2Fgetbootstrap.com">         <embed src="Carousel%20Template%20for%20Bootstrap_files/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" name="global-zeroclipboard-flash-bridge" allowscriptaccess="sameDomain" allowfullscreen="false" type="application/x-shockwave-flash" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="trustedOrigins=getbootstrap.com%2C%2F%2Fgetbootstrap.com%2Chttp%3A%2F%2Fgetbootstrap.com" scale="exactfit" height="100%" width="100%">                </object></div></body></html>
