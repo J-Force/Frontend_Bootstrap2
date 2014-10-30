@@ -7,7 +7,7 @@ a:focus {
 	border-top: 5px solid #3dc9b3;
 }
 
-a,.tp-caption a.btn:hover {
+a,a.btn:hover {
 	color: #3dc9b3;
 }
 .top-nav-collapse {
