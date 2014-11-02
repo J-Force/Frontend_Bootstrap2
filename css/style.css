@@ -321,6 +321,10 @@ hr.bold {
 .margintop-40{margin-top:40px !important;}
 .margintop-45{margin-top:45px !important;}
 .margintop-50{margin-top:50px !important;}
+.margintop-100{margin-top:90px !important;}
+
+.marginleft-60{margin-left:60px !important;}
+.marginright-60{margin-right:60px !important;}
 
 /* ===========================
 --- General sections
