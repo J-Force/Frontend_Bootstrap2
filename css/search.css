@@ -1,0 +1,85 @@
+.manf-name {
+    font-size: 10px;
+    font-weight: normal;
+}
+
+/*==================== .table ===============*/
+	table th, table td{
+	  vertical-align: top;
+	}
+	.table {
+	  margin:0;
+	}
+	.table th,
+	.table td {
+	  padding: 18px 0;
+	  text-align: center;
+	  vertical-align: middle;
+	  border:none;
+	  background:url('../img/dottedBorder.png') repeat-x left bottom;
+	}
+	.table th {
+	  padding:8px 0;
+	  background: none;
+	  font-family: 'Sanchez', serif;
+	  font-weight: 400;
+	  font-size: 14px;
+	}
+	.table thead {
+	  border:1px solid #ddd;
+	  border-bottom:1px solid #d0d0d0;
+	  background: #e7e7e7;
+	  background: -moz-linear-gradient(top, #f7f7f7 0%, #e7e7e7 100%);
+	  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#e7e7e7));
+	  background: -webkit-linear-gradient(top, #f7f7f7 0%,#e7e7e7 100%);
+	  background: -o-linear-gradient(top, #f7f7f7 0%,#e7e7e7 100%);
+	  background: -ms-linear-gradient(top, #f7f7f7 0%,#e7e7e7 100%);
+	  background: linear-gradient(to bottom, #f7f7f7 0%,#e7e7e7 100%);
+	  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#e7e7e7',GradientType=0 );
+	}
+	.table td img {
+	  padding: 3px;
+	  border: 1px solid #e0e0e0;
+	  background-color:#fff;
+	}
+	.table td img:hover {
+	  border: 1px solid #999;
+	}
+
+	/* td.desc */
+	.table td.desc,
+	.table th.desc {
+	  text-align: left;
+	}
+	.table td.desc .rating {
+	  list-style: none;
+	  padding:0;
+	  margin:6px 0;
+	}
+	.table td.desc .rating li {
+	  margin:0;
+	  padding:0;
+	  float: left;
+	}
+	.table td.desc .rating li i {
+	  margin:0;
+	  padding:0;
+	  font-size: 14px;
+	}
+	.table td.desc .rating i.star-on {
+	  width:17px;
+	  height:17px;
+	  display: block;
+	  background:url('../img/star-on.png') no-repeat left top;
+	}
+	.table td.desc .rating i.star-off {
+	  width:17px;
+	  height:17px;
+	  display: block;
+	  background:url('../img/star-off.png') no-repeat left top;
+	}
+	/* sub-price */
+	.table td.sub-price {
+	  font-size: 18px;
+	  font-weight: 600;
+	}

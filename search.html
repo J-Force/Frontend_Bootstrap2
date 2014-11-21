@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<meta name="author" content="">
-		<title>CART</title>
+		<title>SEARCH</title>
 		<!-- css -->
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -15,10 +18,13 @@
 		<link href="css/style.css" rel="stylesheet">
 		<link href="color/default.css" rel="stylesheet">
 		<link href="css/captionHoverEffect.css" rel="stylesheet">
-		<link href="css/cart-css.css" rel="stylesheet">
+		<!-- <link href="css/cart-css.css" rel="stylesheet"> -->
+		<link href="css/search.css" rel="stylesheet">
 	</head>
-	<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-		<!-- Navigation -->
+<body id="index">
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+   	<!-- Navigation -->
 		<div id="navigation">
 			<nav class="navbar navbar-custom" role="navigation">
 				<div class="container">
@@ -59,15 +65,15 @@
 				<!-- /.container -->
 			</nav>
 		</div>
-		<!-- /Navigation -->  
-		<!-- Section: about -->
+	<!-- /Navigation -->  
+	<!-- Section: about -->
 		<section id="about" class="color-dark bg-white">
 			<div class="container margintop-50 marginbot-50">
 				<div class="row">
 					<div class="col-lg-8 col-lg-offset-2">
 						<div class="animatedParent">
 							<div class="section-heading text-center animated bounceInDown">
-								<h2 class="h-bold">CART</h2>
+								<h2 class="h-bold">SEARCH</h2>
 								<div class="divider-header"></div>
 							</div>
 						</div>
@@ -75,7 +81,28 @@
 				</div>
 			</div>
 
-			<div class="container" style = "margin-bottom: 100px">
+      <!-- Search form-->
+      <form id="search-form" class="well form-inline">
+		 <div class="container">
+		 	<div class="row">
+		 		<div class="span12">
+		 			<input id="search-input" type="text" class="span8" placeholder="  search" data-provide="typeahead" style="width:650px">
+	       			<a id="btn-search-lrg" href="#" class="btn btn-primary" title="Go forth and search ">Search</a>
+	      		</div>
+	      	</div>
+	      </div>
+      </form>
+      
+	<!-- Search Categories -->
+	<div id="content">
+		<div id="container" class="container">
+			<div class="row">
+				<!-- Results list and tabular data -->
+				<div class="span9" id="results-main">
+					<h6><small>3 Results for Item in 12.93 ms</small></h6>
+					
+					<!-- part reslults -->
+					<div class="container" style = "margin-bottom: 100px">
 		    	<div class="row">
 		        <div class="span12">
     			<table class="table">
@@ -84,10 +111,8 @@
 			            <tr>
 			                <th><span> Image </span></th>
 			                <th class="desc"><span> Product's Name </span></th>
-			                <th><span> Quantity </span></th>
 			                <th><span> Unit Price </span></th>
-			                <th><span> Price </span></th>
-			                <th><span> Remove </span></th>
+			                <th><span> Add Product </span></th>
 			            </tr>
 		        	</thead>
 		        	<!-- /table head -->
@@ -102,43 +127,28 @@
 			                </td>
 			                <td class="desc" style="padding-top:45px">
 			                    <h6>
-			                        <a class="" href="#" >
-										Item1 Name
-			                        </a>      
+			                        <a class="" href="#" > Item1 Name </a>    
+			                        <br>  
+			                        <a class="manf-name" href="#"> see more information </a>
 			                    </h6>
-			                </td>
-			                <td class="quantity" style="padding-top:45px">
-			                    <div class="input-prepend input-append">
-			                        <button class="btn">
-			                            <i class="glyphicon glyphicon-chevron-left"></i>
-			                        </button>
-			                        <input type="text" value="1" name=""></input>
-			                        <button class="btn">
-			                            <i class="glyphicon glyphicon-chevron-right"></i>
-			                        </button>
-			                    </div>
 			                </td>
 			                <td class="sub-price" style="padding-top:45px">
 			                    <h6>
-			                        $150.00
-			                    </h6>
-			                </td>
-			                <td class="total-price" style="padding-top:45px">
-			                    <h6>
-			                        $150.00
+			                      	$150.00
 			                    </h6>
 			                </td>
 			                <td>
-			                    <button class="btn btn-small btn-danger" data-tip="tooltip" data-placement="top" data-title="Remove" data-original-title="" style="margin-top:32.5px">
-			                        <i class="glyphicon glyphicon-trash"></i>
+			                    <button class="btn btn-small btn-primary" data-tip="tooltip" data-placement="top" data-title="Remove" data-original-title="" style="margin-top:32.5px">
+			                        <i class="glyphicon glyphicon-shopping-cart"></i>
 			                    </button>
 			                </td>
 			            </tr>
 			            <tr></tr>
 			            <tr></tr>
 			            <!-- /item1 -->
+
 			            <!-- item2 -->
-			             <tr> 
+			            <tr> 
 			                <td>
 			                    <a href="#">
 			                        <img alt="" src="img/cart-item.png"></img>
@@ -146,43 +156,28 @@
 			                </td>
 			                <td class="desc" style="padding-top:45px">
 			                    <h6>
-			                        <a class="" href="#" >
-										Item2 Name
-			                        </a>      
+			                        <a class="" href="#" > Item2 Name </a>    
+			                        <br>  
+			                        <a class="manf-name" href="#"> see more information </a>
 			                    </h6>
-			                </td>
-			                <td class="quantity" style="padding-top:45px">
-			                    <div class="input-prepend input-append">
-			                        <button class="btn">
-			                            <i class="glyphicon glyphicon-chevron-left"></i>
-			                        </button>
-			                        <input type="text" value="1" name=""></input>
-			                        <button class="btn">
-			                            <i class="glyphicon glyphicon-chevron-right"></i>
-			                        </button>
-			                    </div>
 			                </td>
 			                <td class="sub-price" style="padding-top:45px">
 			                    <h6>
-			                        $150.00
-			                    </h6>
-			                </td>
-			                <td class="total-price" style="padding-top:45px">
-			                    <h6>
-			                        $150.00
+			                      	$150.00
 			                    </h6>
 			                </td>
 			                <td>
-			                    <button class="btn btn-small btn-danger" data-tip="tooltip" data-placement="top" data-title="Remove" data-original-title="" style="margin-top:32.5px">
-			                        <i class="glyphicon glyphicon-trash"></i>
+			                    <button class="btn btn-small btn-primary" data-tip="tooltip" data-placement="top" data-title="Remove" data-original-title="" style="margin-top:32.5px">
+			                        <i class="glyphicon glyphicon-shopping-cart"></i>
 			                    </button>
 			                </td>
 			            </tr>
 			            <tr></tr>
 			            <tr></tr>
 			            <!-- /item2 -->
+
 			            <!-- item3 -->
-			             <tr> 
+			            <tr> 
 			                <td>
 			                    <a href="#">
 			                        <img alt="" src="img/cart-item.png"></img>
@@ -190,109 +185,54 @@
 			                </td>
 			                <td class="desc" style="padding-top:45px">
 			                    <h6>
-			                        <a class="" href="#" >
-										Item3 Name
-			                        </a>      
+			                        <a class="" href="#" > Item3 Name </a>    
+			                        <br>  
+			                        <a class="manf-name" href="#"> see more information </a>
 			                    </h6>
-			                </td>
-			                <td class="quantity" style="padding-top:45px">
-			                    <div class="input-prepend input-append">
-			                        <button class="btn">
-			                            <i class="glyphicon glyphicon-chevron-left"></i>
-			                        </button>
-			                        <input type="text" value="1" name=""></input>
-			                        <button class="btn">
-			                            <i class="glyphicon glyphicon-chevron-right"></i>
-			                        </button>
-			                    </div>
 			                </td>
 			                <td class="sub-price" style="padding-top:45px">
 			                    <h6>
-			                        $150.00
-			                    </h6>
-			                </td>
-			                <td class="total-price" style="padding-top:45px">
-			                    <h6>
-			                        $150.00
+			                      	$150.00
 			                    </h6>
 			                </td>
 			                <td>
-			                    <button class="btn btn-small btn-danger" data-tip="tooltip" data-placement="top" data-title="Remove" data-original-title="" style="margin-top:32.5px">
-			                        <i class="glyphicon glyphicon-trash"></i>
+			                    <button class="btn btn-small btn-primary" data-tip="tooltip" data-placement="top" data-title="Remove" data-original-title="" style="margin-top:32.5px">
+			                        <i class="glyphicon glyphicon-shopping-cart"></i>
 			                    </button>
 			                </td>
 			            </tr>
 			            <tr></tr>
 			            <tr></tr>
 			            <!-- /item3 -->
-
 			        </tbody>
     			</table>
-    			<br><br>
+    		
 		        </div>
-
-		       
-		        <div class="span5">
-		            <div class="cart-receipt">
-		                <table class="table table-receipt">
-		                    <tbody>
-		                            <td class="alignRight">
-		                                <h2>
-
-		                                    Total
-
-		                                </h2>
-		                            </td>
-		                            <td class="alignLeft">
-		                                <h2>
-
-		                                    $450.00
-
-		                                </h2>
-		                            </td>
-		                        </tr>
-		                        <tr>
-		                            <td class="alignRight">
-		                                <button class="btn">
-
-		                                    Contuine Shoping
-
-		                                </button>
-		                            </td>
-		                            <td class="alignLeft">
-		                                <button class="btn btn-primary">
-
-		                                    Checkout
-
-		                                </button>
-		                            </td>
-		                        </tr>
-		                    </tbody>
-		                </table>
-		            </div>
-		        </div>
-		        <!--
-
-		        end span5
-
-		        -->
 		    </div>
-		    <!--
+				</div>
+			</div>
+			<!-- end parts results -->
 
-		    end row
+			<div class="span5">
+		        <table class="table table-receipt">
+		            <tbody>
+		                <tr>
+		                    <td class="alignCenter">
+		                    	<button class="btn btn-primary"> 
+		                    		Contuine Shoping
+		                        </button>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+			</div>
+			<br><br>
+	</div>
 
-		    -->
-
-		</div>
-		<!--
-
-		end conatiner
-
-		-->
-		</section>
-		<!-- /Section: about -->
-		<!-- /Section: contact -->
-		<footer>
+    </div>
+		
+    </div>
+<footer>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
@@ -320,5 +260,6 @@
 		<script src="js/css3-animate-it.js"></script>
 		<script src="js/toucheffects.js"></script>
 		<script src="js/modernizr.custom.js"></script>
-	</body>
+
+</body>
 </html>
