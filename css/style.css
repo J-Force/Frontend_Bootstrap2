@@ -954,7 +954,18 @@ footer a.totop:focus {
 	outline: 0;
 }
 
+/*wishlist*/
+.wishlist-adjust-pic img{
+	width: 100px;
+	height: 100px;
+}
 
+.wishlist-margin {
+	margin-top: auto;
+	margin-bottom: auto; 
+	margin-right: auto;
+	margin-left: auto;
+}
 
 /* menu */
 ul.footer-menu {
