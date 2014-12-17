@@ -967,6 +967,10 @@ footer a.totop:focus {
 	margin-left: auto;
 }
 
+/*Report*/
+.margin-center {
+	margin: auto;
+}
 /* menu */
 ul.footer-menu {
 	list-style: none;
